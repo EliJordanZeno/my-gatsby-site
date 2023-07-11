@@ -32,26 +32,7 @@ module.exports = {
         // Url to query from
         url: "https://countries.trevorblades.com/",
         refetchInterval:60,
-        createSchema: async () => {
-          const json = JSON.parse(
-            fs.readFileSync(`${__dirname}/introspection.json`)
-          )
-          return buildClientSchema(json.data)
-        }
       }
     },
-    {
-      resolve: "gatsby-source-graphql",
-      options: {
-        typeName: "SWAPI",
-        fieldName: "swapi",
-        url: "https://api.graphcms.com/simple/v1/swapi",
-
-        createSchema: async () => {
-          const sdl = fs.readFileSync(`${__dirname}/schema.sdl`).toString()
-          return buildSchema(sdl)
-        },
-      },
-    }
   ],
 }

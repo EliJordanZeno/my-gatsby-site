@@ -5,13 +5,12 @@ import TextInput from "../components/textInput"
 
 const IndexPage = () => {
     return (
-  
         <Layout pageTitle={"Home Page"}>
           <h1>Welcome to my Gatsby site!</h1>
           <p>This page demonstrates a GraphQL API call</p>
-            <TextInput />
+          <TextInput />
+          
         </Layout>
-  
     )
   }
   
