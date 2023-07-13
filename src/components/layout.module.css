@@ -28,3 +28,11 @@
     font-weight: 700;
     margin: 3rem 0;
 }
+
+.logo-image {
+  max-width: 100px;
+}
+
+.logo-image-wrapper {
+  max-width: 800px;
+}

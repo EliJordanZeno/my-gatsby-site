@@ -3,16 +3,19 @@ import styled from 'styled-components'
 
 const PostItem = styled.div`
     display: grid;
-    
+    grid-template-columns: 10% 90%;
+    background-color: coral;
+    gap: 5px;
 `
 //GRAPHQL call to API to get posts
 
-const Post = ({author,content,profilePic,}) => {
+const Post = ({author,title,content,profilePic,}) => {
     return (
         <PostItem>
-            <h3>Brendan Niemira</h3>
-            <p>Research Leader of the Food Safety and Intervention Technologies</p>
-            <p>I love Kraft Heinz and all of their subsidiay brands for ensuring the marketplace is flooded with safe food products!</p>
+            <h3>{author}</h3>
+            <img alt={`profile pic for ${author}`} src={profilePic}></img>
+            <p>{title}</p>
+            <p>{content}</p>
         </PostItem>
     )
 }

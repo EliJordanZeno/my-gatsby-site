@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Layout from "../components/layout"
+import Layout from "../components/layout copy"
 import Seo from "../components/seo"
 
 const AboutPage = (props) => {

@@ -45,6 +45,11 @@ const Layout = ({pageTitle, children }) => {
                             Country Finder
                         </Link>
                     </li>
+                    <li className={navLinkItem}>
+                        <Link to="/dashboard" className={navLinkText}>
+                            Dashboard Demo
+                        </Link>
+                    </li>
                 </ul>
             </nav>
             <main>

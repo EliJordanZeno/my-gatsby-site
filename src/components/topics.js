@@ -17,7 +17,9 @@ const topicsDisplay = styled.div`
     border-radius: 10pt;
     border-color: navy;
     border-width: 10pt;
-    margin: 10px;`
+    margin: 10px;
+    padding:10px;
+    `
 
 const TrendingTopics = ({ countryCode }) => {
 
