@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 
 const PostWrapper = styled.section`
-  display: grid;
-  grid-template-columns: ${props => `repeat(${props.columns}, 1fr)`};
+    display: flex;
+    flex-flow: row no-wrap
 `
 
 //takes post components as arguments and displays them in a grid-like format within the widget space 

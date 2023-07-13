@@ -10,13 +10,13 @@ import {
 } from "./layout.module.css"
 
 const LayoutWrapper = styled.section`
-    width: 100vw;
-    height:100vh;
+    width: 100%;
+    height:100%;
     font-family: sans-serif;
     display:grid;
     gap:10px;
     justify-content: center;
-    background-color: lightgrey;
+    flex-grow:1;
 `
 
 const Layout = ({pageTitle, children }) => {
@@ -36,11 +36,13 @@ const Layout = ({pageTitle, children }) => {
             <header className={siteTitle}>{data.site.siteMetadata.title}</header>
             <h2>{pageTitle}</h2>
             {children}
-            <StaticImage 
-            src="../images/zeno_khc_logo.png"
-            imgClassName={logoImage}
-            className={logoImageWrapper}
-            />
+            <footer>
+                <StaticImage 
+                src="../images/zeno_khc_logo.png"
+                imgClassName={logoImage}
+                className={logoImageWrapper}
+                />
+            </footer>
         </LayoutWrapper>
     )
 }
