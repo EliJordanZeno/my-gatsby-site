@@ -16,7 +16,7 @@ const GridItem = styled.div`
     border-width: 10pt;
     margin: 10px;
     grid-area: ${row} / ${column};
-    filter: drop-shadow(2px 2px 4px #4444dd)
+    filter: drop-shadow(2px 2px 4px lightblue)
 `
 
     return(

@@ -4,8 +4,12 @@ import styled from 'styled-components'
 const PostItem = styled.div`
     display: grid;
     grid-template-columns: 10% 90%;
-    background-color: coral;
+    background-color: lightblue;
     gap: 5px;
+`
+
+const PostContent = styled.p`
+    overflow-x: scroll;
 `
 //GRAPHQL call to API to get posts
 
@@ -15,7 +19,9 @@ const Post = ({author,title,content,profilePic,}) => {
             <h3>{author}</h3>
             <img alt={`profile pic for ${author}`} src={profilePic}></img>
             <p>{title}</p>
-            <p>{content}</p>
+            <PostContent>
+                {content}
+            </PostContent>
         </PostItem>
     )
 }
