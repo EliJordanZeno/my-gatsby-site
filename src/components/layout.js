@@ -1,14 +1,25 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
+import Widget from './widget'
 
-import {
-    container,
-    heading,
-    navLinks,
-    navLinkItem,
-    navLinkText,
-    siteTitle
-} from './layout.module.css'
+const container = styled.div`
+    margin:auto;
+    max-width: 500px;
+    font-family: sans-serif;
+    display:grid;
+    grid-template-columns: 5vw 20vw 70vw;
+    grid-template-rows: 5vw 10vw;
+    gap:10px;
+`
+
+const LayoutWrapper = styled.section`
+    width: 100vw;
+    font-family: sans-serif;
+    display:grid;
+
+    gap:10px;
+`
 
 const Layout = ({pageTitle, children }) => {
     const data = useStaticQuery(graphql`
@@ -20,38 +31,12 @@ const Layout = ({pageTitle, children }) => {
         }
     }
     `)
+
     return (
-        <div className={container}>
-            <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-            <nav>
-                <ul className={navLinks}>
-                    <li className={navLinkItem}>
-                        <Link to="/" className={navLinkText}>
-                        Home
-                        </Link>
-                    </li>
-                    <li className={navLinkItem}>
-                        <Link to="/about" className={navLinkText}>
-                            About
-                        </Link>
-                    </li>
-                    <li className={navLinkItem}>
-                        <Link to="/blog" className={navLinkText}>
-                            Blog
-                        </Link>
-                    </li>
-                    <li className={navLinkItem}>
-                        <Link to="/countries" className={navLinkText}>
-                            Country Finder
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
-            <main>
-                <h1 className={heading}>{pageTitle}</h1>
-                {children}
-            </main>
-        </div>
+        
+        <LayoutWrapper>
+            {children}
+        </LayoutWrapper>
     )
 }
 

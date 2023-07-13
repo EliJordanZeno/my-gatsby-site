@@ -8,7 +8,7 @@ const { buildSchema, buildClientSchema } = require("graphql")
 
 module.exports = {
   siteMetadata: {
-    title: `A Demo of GraphQL and Gatsby integration`,
+    title: `Stakeholder View`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
