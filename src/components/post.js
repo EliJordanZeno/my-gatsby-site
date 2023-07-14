@@ -17,7 +17,7 @@ const Post = ({author,title,content,profilePic,}) => {
     return (
         <PostItem>
             <h3>{author}</h3>
-            <img alt={`profile pic for ${author}`} src={profilePic}></img>
+            <img alt={`profile pic for ${author}`} src={"../images/icon.png"}></img>
             <p>{title}</p>
             <PostContent>
                 {content}

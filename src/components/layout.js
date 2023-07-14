@@ -10,11 +10,12 @@ import {
 } from "./layout.module.css"
 
 const LayoutWrapper = styled.section`
-    width: 100%;
+    width: 90%;
     height:100%;
     font-family: sans-serif;
     display:grid;
     gap:10px;
+    padding: 1vw;
     justify-content: center;
     flex-grow:1;
 `
