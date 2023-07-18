@@ -5,11 +5,11 @@ import styled from 'styled-components'
 const PostWrapper = styled.section`
     display: flex;
     flex-direction:column;
-    x-overflow: scroll;
     align-items:stretch;
     place-items: center;
     align-content: center;
-    max-height: 60%;
+    max-height: 600px;
+    overflow-x: scroll;
     gap:10px 5px;
 `
 

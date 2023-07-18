@@ -5,7 +5,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
-    background-color: pink;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at top, #142152, transparent),
+    radial-gradient(ellipse at bottom, #E32726, transparent);
 }
