@@ -3,16 +3,21 @@ import styled from 'styled-components'
 
 
 const Table = styled.table`
-    border: 1px solid;
+    border: 0px solid;
+    align-self:center;
+    border-spacing: 5px;
 `
 
 const Td = styled.td`
-    border: 5px solid;
+    border: 0px solid;
+    padding: 5px 1px;
+    margin: 5px 1px;
 `
 const TableRow = styled.tr`
     width:100%;
-    border: 1px dashed;
-    background: antiquewhite;
+    border: 0px;
+    gap:5px;
+    background: lightgrey;
 `
 
 

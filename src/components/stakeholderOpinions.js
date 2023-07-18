@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 const Table = styled.table`
     border: 1px solid;
+    border-spacing: 5px;
 `
 
 const Td = styled.td`

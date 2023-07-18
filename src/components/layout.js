@@ -13,11 +13,13 @@ const LayoutWrapper = styled.section`
     width: 90%;
     height:100%;
     font-family: sans-serif;
-    display:grid;
+    display:flex;
+    flex-direction: column;
     gap:10px;
     padding: 1vw;
     justify-content: center;
-    flex-grow:1;
+    place-items: center;
+    align-items:center;
 `
 
 const Layout = ({pageTitle, children }) => {
@@ -36,6 +38,7 @@ const Layout = ({pageTitle, children }) => {
         <LayoutWrapper>
             <header className={siteTitle}>{data.site.siteMetadata.title}</header>
             <h2>{pageTitle}</h2>
+            {/* add nav bar for other page views */}
             {children}
             <footer>
                 <StaticImage 

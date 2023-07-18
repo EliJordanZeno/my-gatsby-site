@@ -10,13 +10,14 @@ const GridItem = styled.div`
     place-self:auto;
     width: 100%;
     height: 100%;
-    border-top: 5px solid
-    border-color: tomato;
+    padding:10px;
+    border: 1px solid;
+    border-color: grey;
     border-radius: 10px;
     border-width: 10pt;
-    margin: 10px;
+    margin: 20px;
     grid-area: ${row} / ${column};
-    filter: drop-shadow(2px 2px 4px lightblue)
+    filter: drop-shadow(2px 2px 4px lightgrey);
 `
 
     return(

@@ -4,6 +4,10 @@ import styled from 'styled-components'
 const GridWrapper = styled.section`
     display:grid;
     grid-template-columns: 1fr,2fr;
+    place-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 20px;
 `
 
 
