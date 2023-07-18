@@ -17,7 +17,7 @@ const TableRow = styled.tr`
     width:100%;
     border: 0px;
     gap:5px;
-    background: lightgrey;
+    background: #A2A0A0;
 `
 
 

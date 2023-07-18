@@ -6,13 +6,13 @@ import styled from 'styled-components'
 const Widget = ({row,column, children}) => {
     //position is 1 of 4 places on screen, also determines size
 const GridItem = styled.div`
-    background-color:#A0AEAE ;
+    background-color:#F1F0F3 ;
     place-self:auto;
     width: 100%;
     height: 100%;
     padding:10px;
     border: 1px solid;
-    border-color: grey;
+    border-color: #585B5A;
     border-radius: 10px;
     border-width: 10pt;
     margin: 20px;

@@ -13,7 +13,6 @@ const topicsDisplay = styled.div`
     place-self: auto;
     width: 100%;
     height: 100%;
-    border-color: tomato;
     border-radius: 10pt;
     border-color: navy;
     border-width: 10pt;

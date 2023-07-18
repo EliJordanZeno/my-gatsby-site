@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const PostItem = styled.div`
     display: grid;
     grid-template-columns: 10% 90%;
-    background-color: lightgrey;
+    background-color: #A2A0A0;
     opacity: 0.6;
     gap: 5px;
     flex-shrink:2;

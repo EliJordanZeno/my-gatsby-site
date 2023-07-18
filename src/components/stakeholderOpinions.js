@@ -5,6 +5,8 @@ import styled from 'styled-components'
 const Table = styled.table`
     border: 1px solid;
     border-spacing: 5px;
+    overflow-x: scroll;
+    max-height: 100px;
 `
 
 const Td = styled.td`
@@ -12,8 +14,8 @@ const Td = styled.td`
 `
 const TableRow = styled.tr`
     width:100%;
-    border: 1px dashed;
-    background: antiquewhite;
+    border: 1px solid;
+    background: #A2A0A0;
 `
 
 
@@ -45,6 +47,14 @@ const StakeholderOpinions = () => {
 
     return (
         <Table>
+            <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
+            <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
+            <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
+            <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
+            <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
+            <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
+            <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
+            <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
             <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
             <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
             <TableData name={"Brendan Nimiera"} title={"Federal"} role={"FDA Leadership"} date={"February 1, 2023"} postText={"My quarterly review is now complete. It lasted 25 seconds. It took longer for me to log into the system, navigate to the ACKNOWLEDGE QUARTERLY REVIEW than the review lasted. The value of this exercise is, shall we say, debatable."}></TableData>
