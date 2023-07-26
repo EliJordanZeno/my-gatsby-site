@@ -3,20 +3,17 @@ import styled from 'styled-components'
 
 
 const Table = styled.table`
-    border: 0px solid;
     align-self:center;
     border-spacing: 5px;
     overflow-x:scroll;
 `
 
 const Td = styled.td`
-    border: 0px solid;
-    padding: 5px 1px;
+    padding: 2px 5px;
     margin: 5px 1px;
 `
 const TableRow = styled.tr`
     width:100%;
-    border: 0px;
     gap:5px;
     background: #A2A0A0;
 `
@@ -40,17 +37,21 @@ const TableData = ({name,title}) => {
 const StakeholderList = () => {
 
     return (
+        <>
+        <form >
+            <label>
+                Name:
+                <input type="text"  />
+            </label>
+            <input type="submit" value="Add" />
+        </form>
         <Table>
-            <form>
-                <label>
 
-                </label>
-                
-            </form>
             <TableData name={"Brendan Nimiera"} title={"Federal"}></TableData>
             <TableData name={"Brendan Nimiera"} title={"Federal"}></TableData>
             <TableData name={"Brendan Nimiera"} title={"Federal"}></TableData>
         </Table>
+        </>
     )
 }
 

@@ -11,7 +11,7 @@ const GridItem = styled.div`
     width: 100%;
     height: 100%;
     padding:10px;
-    border: 1px solid;
+    border: 0.5px solid;
     border-color: #585B5A;
     border-radius: 10px;
     border-width: 10pt;

@@ -11,6 +11,7 @@ const Table = styled.table`
 
 const Td = styled.td`
     border: 5px solid;
+    padding:2px 5px;
 `
 const TableRow = styled.tr`
     width:100%;

@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 const IndexPage = () => {
   return (
       <Layout pageTitle={"Home Page"}>
-        <h1>Welcome to my Gatsby site!</h1>
+        <h1>Welcome to Zeno Dash, Kraft Heinz!</h1>
         
       </Layout>
   )
