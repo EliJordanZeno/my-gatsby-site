@@ -11,3 +11,24 @@ body {
     radial-gradient(ellipse at top, #E32726, transparent),
     radial-gradient(ellipse at bottom, #142152, transparent);
 }
+
+/* Color Theme Swatches in Hex */
+.Kraft-Heinz-1-hex { color: #F1F0F3; }
+.Kraft-Heinz-2-hex { color: #E32726; }
+.Kraft-Heinz-3-hex { color: #A2A0A0; }
+.Kraft-Heinz-4-hex { color: #585B5A; }
+.Kraft-Heinz-5-hex { color: #142152; }
+
+/* Color Theme Swatches in RGBA */
+.Kraft-Heinz-1-rgba { color: rgba(241, 240, 243, 1); }
+.Kraft-Heinz-2-rgba { color: rgba(227, 39, 38, 1); }
+.Kraft-Heinz-3-rgba { color: rgba(162, 160, 160, 1); }
+.Kraft-Heinz-4-rgba { color: rgba(88, 91, 90, 1); }
+.Kraft-Heinz-5-rgba { color: rgba(20, 33, 82, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Kraft-Heinz-1-hsla { color: hsla(260, 11, 94, 1); }
+.Kraft-Heinz-2-hsla { color: hsla(0, 77, 51, 1); }
+.Kraft-Heinz-3-hsla { color: hsla(0, 1, 63, 1); }
+.Kraft-Heinz-4-hsla { color: hsla(160, 1, 35, 1); }
+.Kraft-Heinz-5-hsla { color: hsla(227, 60, 20, 1); }

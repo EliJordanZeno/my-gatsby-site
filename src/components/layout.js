@@ -1,12 +1,15 @@
 import * as React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Link,useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
 
 import {
     siteTitle,
     logoImage,
-    logoImageWrapper
+    logoImageWrapper,
+    navLinks,
+    navLinkItem,
+    navLinkText,
 } from "./layout.module.css"
 
 const LayoutWrapper = styled.section`
@@ -39,7 +42,23 @@ const Layout = ({pageTitle, children }) => {
             <header className={siteTitle}>{data.site.siteMetadata.title}</header>
             <h2>{pageTitle}</h2>
             {/* add nav bar for other page views */}
-            {children}
+            <nav >
+                <ul className={navLinks}>
+                    <li className={navLinkItem}>
+                        <Link to="/" className={navLinkText}>
+                            Home
+                        </Link>
+                    </li>
+                    <li className={navLinkItem}>
+                        <Link to="/stakeholder" className={navLinkText}>
+                            Stakeholder View
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                {children}
+            </main>
             <footer>
                 <StaticImage 
                 src="../images/zeno_khc_logo.png"

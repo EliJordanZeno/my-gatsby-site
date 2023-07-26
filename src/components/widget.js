@@ -19,7 +19,6 @@ const GridItem = styled.div`
     grid-area: ${row} / ${column};
     filter: drop-shadow(2px 2px 4px lightgrey);
 `
-
     return(
         <GridItem>
             {children}

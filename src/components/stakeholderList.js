@@ -6,6 +6,7 @@ const Table = styled.table`
     border: 0px solid;
     align-self:center;
     border-spacing: 5px;
+    overflow-x:scroll;
 `
 
 const Td = styled.td`
@@ -21,7 +22,7 @@ const TableRow = styled.tr`
 `
 
 
-
+//add button for updating stakeholder list
 const TableData = ({name,title}) => {
     // preformatted row of name and accompanying title
     return (
@@ -40,6 +41,12 @@ const StakeholderList = () => {
 
     return (
         <Table>
+            <form>
+                <label>
+
+                </label>
+                
+            </form>
             <TableData name={"Brendan Nimiera"} title={"Federal"}></TableData>
             <TableData name={"Brendan Nimiera"} title={"Federal"}></TableData>
             <TableData name={"Brendan Nimiera"} title={"Federal"}></TableData>
