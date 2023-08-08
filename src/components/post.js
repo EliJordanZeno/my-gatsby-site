@@ -29,14 +29,13 @@ const PostHeader = styled.div`
 
 //GRAPHQL call to API to get posts
 
-const Post = ({author,title,content,profilePic,}) => {
+const Post = ({author,title,content}) => {
     return (
         <PostItem>
             <PostHeader>
                 <PostAuthor>
                     {author}
                 </PostAuthor>
-                <img alt={`profile pic for ${author}`} src={"../images/icon.png"}></img>
                 <AuthorTitle>
                     {title}
                 </AuthorTitle>

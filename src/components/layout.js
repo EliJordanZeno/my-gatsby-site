@@ -54,6 +54,11 @@ const Layout = ({pageTitle, children }) => {
                             Stakeholder View
                         </Link>
                     </li>
+                    <li className={navLinkItem}>
+                        <Link to="/issues" className={navLinkText}>
+                            Key Issues
+                        </Link>
+                    </li>
                 </ul>
             </nav>
             <main>

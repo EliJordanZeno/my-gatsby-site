@@ -12,26 +12,27 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: 
-      {
-        name:'blog',
-        path: `${__dirname}/blog`,
+    "gatsby-plugin-image"
+    ,"gatsby-plugin-sharp"
+    ,{
+      resolve:"gatsby-source-rest-api",
+      options:{
+        endpoints:[
+          "https://jsonplaceholder.typicode.com/posts"
+          ,
+        ]
       }
-    },
+    }
+    ,
     {
       resolve: "gatsby-source-graphql",
       options: {
         // Arbitrary name for the remote schema Query type
-        typeName: "CountryAPI",
+        typeName: "GraphQLzero",
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-        fieldName: "countryapi",
+        fieldName: "zeroPosts",
         // Url to query from
-        url: "https://countries.trevorblades.com/",
-        refetchInterval:60,
+        url: "https://graphqlzero.almansi.me/api",
       }
     },
   ],
