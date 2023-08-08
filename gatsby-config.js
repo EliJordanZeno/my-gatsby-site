@@ -8,8 +8,13 @@ const { buildSchema, buildClientSchema } = require("graphql")
 
 module.exports = {
   siteMetadata: {
-    title: `Kraft Heinz Dashboard DEMO`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Kraft Heinz Dashboard DEMO`
+    ,siteUrl: `https://www.yourdomain.tld`
+    ,stakeholders:[
+      "Clementine Bauch"
+      ,"Leanne Graham"
+      ,"Ervin Howell"
+    ]
   },
   plugins: [
     "gatsby-plugin-image"

@@ -13,6 +13,9 @@ const PostItem = styled.div`
 
 const PostContent = styled.p`
     overflow-x: wrap;
+    background-color:white;
+    border-radius:1rem;
+    padding:1rem;
 `
 
 const PostAuthor = styled.h3`
@@ -27,7 +30,6 @@ const PostHeader = styled.div`
     min-width:20%;
 `
 
-//GRAPHQL call to API to get posts
 
 const Post = ({author,title,content}) => {
     return (

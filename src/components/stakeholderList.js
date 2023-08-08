@@ -1,3 +1,4 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import * as React from 'react'
 import styled from 'styled-components'
 
@@ -35,7 +36,20 @@ const TableData = ({name,title}) => {
 }
 
 const StakeholderList = () => {
-
+    const data = useStaticQuery(graphql`
+    query{
+        site{
+            siteMetadata{
+                stakeholders
+            }
+        }
+    }`
+    )
+    console.log(data)
+    let tableDatas = []
+    for(let i = 0; i < data.site.siteMetadata.stakeholders.length; i++){
+        tableDatas.push(<TableData name={data.site.siteMetadata.stakeholders[i]} title={"demo"}></TableData>)
+    }
     return (
         <>
         <form >
@@ -46,10 +60,7 @@ const StakeholderList = () => {
             <input type="submit" value="Add" />
         </form>
         <Table>
-
-            <TableData name={"Brendan Nimiera"} title={"Federal"}></TableData>
-            <TableData name={"Brendan Nimiera"} title={"Federal"}></TableData>
-            <TableData name={"Brendan Nimiera"} title={"Federal"}></TableData>
+            {tableDatas}
         </Table>
         </>
     )

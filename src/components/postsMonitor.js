@@ -61,7 +61,6 @@ const PostsMonitor = ({columns,style}) => {
 
     if (loading) return "Loading..."
     if (error) return "Something bad happened"
-    console.log(data)
     let posts = []
     for(let i = 0; i< 30;i++){
         posts.push(<Post author={data.posts.data[i].user.name} title={data.posts.data[i].title} content={data.posts.data[i].body}></Post>)
