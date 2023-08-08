@@ -24,7 +24,6 @@ const LayoutWrapper = styled.section`
     place-items: center;
     align-items:center;
 `
-
 const Layout = ({pageTitle, children }) => {
     const data = useStaticQuery(graphql`
     query{
