@@ -18,7 +18,7 @@ const PostContent = styled.p`
     padding:1rem;
 `
 
-const PostAuthor = styled.h3`
+const PostAuthor = styled.h4`
     overflow-x: no-wrap;
 `
 const AuthorTitle = styled.p`
