@@ -32,7 +32,7 @@
     padding:1rem;
     justify-content: center;
     text-decoration: none;
-    transform: translate(-50%,-50%); /*Center text items*/
+    transform: translate(-50%,-50%);
   }
 .site-title{
     font-size: 3rem;
