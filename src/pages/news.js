@@ -6,6 +6,7 @@ import RssFeed from '../components/rssFeed'
 
 
 const IssuesPage = () => {
+
     return(
     <Layout pageTitle={"Key Issues View"}>
         <Grid style={{gridGap: "16px"}}>
@@ -15,7 +16,10 @@ const IssuesPage = () => {
             <Widget row={2} column={1} >
                 <RssFeed srcUrl={"https://rss.app/embed/v1/wall/F0JaWvddpbNxjeKO"}></RssFeed>
             </Widget>
-            <Widget row={2} column={1} >
+            <Widget row={3} column={1} >
+                <RssFeed srcUrl={"https://rss.app/embed/v1/wall/BGzFdz7fZkkiEjDe"}></RssFeed>
+            </Widget>
+            <Widget row={4} column={1} >
                 <RssFeed srcUrl={"https://rss.app/embed/v1/wall/BGzFdz7fZkkiEjDe"}></RssFeed>
             </Widget>
         </Grid>
