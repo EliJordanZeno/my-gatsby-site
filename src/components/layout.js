@@ -18,7 +18,7 @@ const LayoutWrapper = styled.section`
     font-family: sans-serif;
     display:flex;
     flex-direction: column;
-    gap:10px;
+    gap:20px;
     padding: 1vw;
     justify-content: center;
     place-items: center;
@@ -54,8 +54,8 @@ const Layout = ({pageTitle, children }) => {
                         </Link>
                     </li>
                     <li className={navLinkItem}>
-                        <Link to="/issues" className={navLinkText}>
-                            Key Issues
+                        <Link to="/news" className={navLinkText}>
+                            News
                         </Link>
                     </li>
                 </ul>

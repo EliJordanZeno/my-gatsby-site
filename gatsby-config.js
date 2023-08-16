@@ -20,6 +20,12 @@ module.exports = {
     "gatsby-plugin-image"
     ,"gatsby-plugin-sharp"
     ,{
+      resolve:"gatsby-transformer-remark",
+      options:{
+        plugins:["gatsby-remark-responsive-iframe"]
+      }
+    }
+    ,{
       resolve:"gatsby-source-rest-api",
       options:{
         endpoints:[

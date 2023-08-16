@@ -4,7 +4,7 @@ import Grid from '../components/grid'
 import Widget from '../components/widget'
 import TrendingTopics from '../components/topics'
 import PostsMonitor from '../components/postsMonitor'
-
+import RssFeed from '../components/rssFeed'
 import StakeholderList from '../components/stakeholderList'
 import StakeholderOpinions from '../components/stakeholderOpinions'
 
@@ -31,6 +31,7 @@ const DashboardPage = () => {
                     <h2>Stakeholder Opinions</h2>
                     <StakeholderOpinions></StakeholderOpinions>
                 </Widget>
+
             </Grid>
 
         </Layout>
