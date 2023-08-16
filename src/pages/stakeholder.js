@@ -31,9 +31,7 @@ const DashboardPage = () => {
                     <h2>Stakeholder Opinions</h2>
                     <StakeholderOpinions></StakeholderOpinions>
                 </Widget>
-
             </Grid>
-
         </Layout>
     )
 }

@@ -15,10 +15,10 @@ const PostWrapper = styled.section`
 `
 
 
-const RssFeed = () => {
+const RssFeed = ({srcUrl}) => {
     return (
         <PostWrapper>
-<iframe width="850" height="1600" src="https://rss.app/embed/v1/list/tFfvd3g1ydZN1OuN" frameborder="0"></iframe>
+            <iframe width="850" height="1600" src={srcUrl} frameborder="0"></iframe>
         </PostWrapper>
     )
 }

@@ -7,7 +7,6 @@ const IndexPage = () => {
   return (
       <Layout pageTitle={"Home Page"}>
         <h1>Welcome to Zeno Dash, Kraft Heinz!</h1>
-        
       </Layout>
   )
 }

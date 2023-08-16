@@ -9,9 +9,12 @@ const IssuesPage = () => {
     return(
     <Layout pageTitle={"Key Issues View"}>
         <Grid style={{gridGap: "16px"}}>
-        <Widget row={3} column={1} >
-                    <RssFeed></RssFeed>
-                </Widget>
+            <Widget row={1} column={1} >
+                <RssFeed srcUrl={"https://rss.app/embed/v1/list/tFfvd3g1ydZN1OuN"}></RssFeed>
+            </Widget>
+            <Widget row={2} column={1} >
+                <RssFeed srcUrl={"https://rss.app/embed/v1/wall/F0JaWvddpbNxjeKO"}></RssFeed>
+            </Widget>
         </Grid>
     </Layout>
     )
