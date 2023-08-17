@@ -22,6 +22,9 @@ const IssuesPage = () => {
             <Widget row={4} column={1} >
                 <RssFeed srcUrl={"https://rss.app/embed/v1/list/bDwJjPhLphcNewfU"}></RssFeed>
             </Widget>
+            <Widget row={4} column={1} >
+                <RssFeed srcUrl={"https://rss.app/embed/v1/list/bDwJjPhLphcNewfU"}></RssFeed>
+            </Widget>
         </Grid>
     </Layout>
     )

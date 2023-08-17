@@ -23,7 +23,6 @@ const RssFeed = ({srcUrl}) => {
     )
 }
 
-setInterval(RssFeed,10000)
 
 
 export default RssFeed
